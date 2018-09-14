@@ -2,5 +2,6 @@
     <string name="app_name">Movies</string>
     <string name="singham_title">Singham</string>
     <string name="singham_orig_title">Singham (सिंघम)</string>
-    <string name="singham_desc">Policier honnête mais aux méthodes peu conventionnelles, Singham file le parfait amour avec Kavya. Il est muté de son petit village du Maharashtra à Goa où il est confronté à Jaikant Shikre, un politicien véreux qu\'il ne parvient pas à inculper car il bénéficie de nombreux soutiens de policiers corrompus. Découragé par ses échecs successifs, il est sur le point d'abandonner mais sa fiancée l'encourage à poursuivre sa lutte contre le crime.</string>
+    <string name="singham_desc">Policier honnête mais aux méthodes peu conventionnelles, Singham file le parfait amour avec Kavya.</string>
+    <string name="singham_key_words">Bullshit</string>
 </resources>
