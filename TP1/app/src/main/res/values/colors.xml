@@ -4,5 +4,9 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="btn_bkg">#efc645</color>
+    <color name="btn_bkg_active">#4caf50</color>
     <color name="background">#000000</color>
+    <color name="materialGray900">#212121</color>
+    <color name="txt_active">#000</color>
+    <color name="txt_inactive">#fff</color>
 </resources>

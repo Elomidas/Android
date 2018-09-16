@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AppBar">
+        <attr name="txt_title" format="string">Title</attr>
+        <attr name="txt_backTitle" format="string">Back Title</attr>
+    </declare-styleable>
+</resources>

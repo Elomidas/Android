@@ -18,13 +18,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <com.example.root.tp1.AppBar
+            android:id="@+id/appbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:txt_backTitle="BackTitle"
+            app:txt_title="Title" />
+
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:paddingBottom="50dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <ImageView
@@ -181,7 +190,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:padding="@dimen/logo_pad"
-                                app:srcCompat="@drawable/ic_share_black_24dp"
+                                android:src="@drawable/ic_share_black_24dp"
                                 tools:ignore="VectorDrawableCompat" />
 
                             <TextView
@@ -218,7 +227,7 @@
                                 android:layout_weight="1"
                                 android:contentDescription="comment"
                                 android:padding="@dimen/logo_pad"
-                                app:srcCompat="@drawable/ic_mode_comment_black_24dp"
+                                android:src="@drawable/ic_mode_comment_black_24dp"
                                 tools:ignore="VectorDrawableCompat" />
 
                             <TextView
@@ -254,7 +263,7 @@
                                 android:layout_weight="1"
                                 android:contentDescription="like"
                                 android:padding="@dimen/logo_pad"
-                                app:srcCompat="@drawable/ic_arrow_upward_black_24dp"
+                                android:src="@drawable/ic_arrow_upward_black_24dp"
                                 tools:ignore="VectorDrawableCompat" />
 
                             <TextView
@@ -274,25 +283,20 @@
                 <LinearLayout
                     android:id="@+id/lay_com"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
                     android:background="@android:color/darker_gray"
+                    android:foregroundGravity="center_vertical"
+                    android:gravity="center_vertical|center"
                     android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:minHeight="500dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/txt_com_fill"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center_vertical|center_horizontal"
-                            android:paddingTop="50dp"
-                            android:text="Liste des commentaires"
-                            android:textColor="@android:color/white" />
-                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/txt_com_fill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:text="Liste des commentaires"
+                        android:textColor="@android:color/white" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -314,7 +318,7 @@
             android:paddingRight="12dp">
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/edit_comment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -325,7 +329,7 @@
                 android:textColor="@android:color/darker_gray" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/img_send"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
