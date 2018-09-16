@@ -3,4 +3,5 @@
     <dimen name="logo_pad">3dp</dimen>
     <dimen name="btn_pad">5dp</dimen>
     <dimen name="btn_margin">5dp</dimen>
+    <dimen name="pad_desc">7dp</dimen>
 </resources>
