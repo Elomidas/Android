@@ -26,6 +26,10 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/app_bar_info" />
         </receiver>
+
+        <activity android:name=".CategoriesActivity">
+
+        </activity>
     </application>
 
 </manifest>

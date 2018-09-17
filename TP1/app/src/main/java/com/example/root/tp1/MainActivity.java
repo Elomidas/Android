@@ -2,6 +2,7 @@ package com.example.root.tp1;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -29,7 +30,9 @@ public class MainActivity extends Activity {
         bar.img_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MainActivity.this.finish();
+                //Ouverture de la liste des categories
+                Intent next = new Intent(MainActivity.this, CategoriesActivity.class);
+                startActivity(next);
             }
         });
 
