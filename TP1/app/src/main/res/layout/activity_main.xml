@@ -44,7 +44,7 @@
                     android:adjustViewBounds="true"
                     android:contentDescription="Singham"
                     android:padding="0dp"
-                    app:srcCompat="@drawable/singham" />
+                    android:src="@drawable/singham" />
 
                 <TextView
                     android:id="@+id/textView8"
